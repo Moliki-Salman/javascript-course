@@ -33,7 +33,7 @@ if(5) {
   console.log( 'truthy') // this  will display in the console becos its true
 }
 
-//falsy value behave like false.
+/*falsy value behave like false.
 /* in javascript there are  list of falsy values they are:
 - false
 - 0 (zero)
@@ -46,6 +46,74 @@ any value that is not on this list is a truthy value
 if(0) {
   console.log( 'truthy') // this  will  not display in the console becos its falsy
 }
+
+// we use truthy and falsy value like a shortcort
+ let cartQuantity = 0 // this is a falsy value
+if (cartQuantity ) {
+console.log(' display product')
+  }/*
+ instead of tying cartQuanty > 0 in the if statment, you can just put cartQuanty because:
+ cartQuanty is >= 0   result to false
+  cartQuanty result to  falsy
+*/
+
+/* truthy and falsy values also work with logical values  operators
+console.log (!0); // this will flip the result to true becos not zero is true
+
+console.log('text' / 5) // here is an example of not a NAN
+
+let var1;
+console.log(var1) // this will display undefined in the console because undefined  represent the varialbe doesnt have a value.
+// note if you want a define a value that is undefined then you cant use const, to use const means you have to set the vvalue to undefine.
+const var2 = undefined */
+
+/**SHORTCORTS FOR IF STATEMENTS
+ * Ternary operator ?:
+ * Guard operator &&
+ * Default operator ||
+ */
+//TERNARY OPERATOR ?:
+//this means if the value is true, the valye after the question mark will display, however, if the value is false , the value after the colon will display.
+ true ? 'truthy' : 'falsy'
+ // the above code can be writen like this
+ if(true) {
+'truthy'
+ } else {
+'falsy'
+ }
+ // the advantage if a ternary operator is that it can be saved in a variable like this
+ const result = 0 ? 'truthy' : 'falsy';
+console.log(result) // display falsy because the first value is zero means that  falsy will be saved to the variable result.the above is  a shortcort of an if else statement like this
+ /*let result2;
+if (condition){
+result2 = 'truthy'
+} else {
+ result2 = 'falsy'
+}*/
+
+
+/*
+AND OPERATOR && :checks if 2 sides are both truthy.
+value1 && value2. The AND OPERATOR is special becos it imposible for both side to be truthy,
+thus once value1 is false, it doesnt  need to check the right side  and
+so it doesnt bother to run the code on the right and this is caled (Short-circuit Evaluation).
+Thus, the && is called the Guard operator because its like a shortcut to guide the code on the right side once the codeon the left is falsy. eg*/ false && console.log('hello') //the console would not run becos it will stop since value1is false. the above code is a shortcort for the if statement
+/*if( condition) {
+'Hello'
+}*/
+
+const message = false && 'hello'; // it can as well be stored in a variable
+console.log(message)// in this case the value false will be saved in to the variable message
+
+const message2 = 5 && 'hello'; // 5 is a truthy value
+console.log(message2) // soit will console.log the second value 'hello' which will be saved into the variable message.
+
+
+/*
+DEFAULT OPERATOR ||,the OR checks if at least one sides  is truthy
+value1 || value2.if the left side (value1) is truthy, then we dont need to check the rightside,the code stops runing
+*/
+const currency = 'EUR';
 </script>
 </body>
 </html>
