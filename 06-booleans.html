@@ -67,6 +67,7 @@ console.log(var1) // this will display undefined in the console because undefine
 // note if you want a define a value that is undefined then you cant use const, to use const means you have to set the vvalue to undefine.
 const var2 = undefined */
 
+
 /**SHORTCORTS FOR IF STATEMENTS
  * Ternary operator ?:
  * Guard operator &&
@@ -111,9 +112,14 @@ console.log(message2) // soit will console.log the second value 'hello' which wi
 
 /*
 DEFAULT OPERATOR ||,the OR checks if at least one sides  is truthy
-value1 || value2.if the left side (value1) is truthy, then we dont need to check the rightside,the code stops runing
+value1 || value2.if the left side (value1) is truthy, then we dont need to check the rightside,the code stops runing.
+so the OR operator can  be used to set a default value just like the USDVALUE BELOW
 */
-const currency = 'EUR';
+// it will result to EUR becos the left   value is truthy
+const currency = 'EUR'|| 'USD'// thE dafault currency set us inUSD
+
+// it will result to USD becos the left value is falsy
+const currency2 = undefined || 'USD'
 </script>
 </body>
 </html>
