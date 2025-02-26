@@ -11,7 +11,39 @@
 objets can have properties and methods.
 Strings can also have properties and methods. eg the property .length.
 */
-console.log('Hello'.length)
+console.log('Hello'.length)// used the length of the string
+console.log('Hello'.toLocaleUpperCase()) //gives the string in uppercase.
+const object3 = {
+message: 'Good job!',
+price: 344
+}
+//Destructuring: is a shortcut to take a variable out of an object.
+//const message = object3.message
+const { message, price } = object3
+/*  Explanation  of the above: this is the same as const message = object3.message. this how to get the value out of the object.
+this takes the message and price property out of the object and store it inside a variable called message and price respectively*/
+
+
+//another things desstructuring  does is that you can store the value of an object into another object eg
+
+ const object6 = {
+  //message: message;  this will display the value of message property from const { message, price } = object3
+  message,//
+  method: function fun1 (){
+    console.log('method practice')
+  },
+//theabove is the same as the below.The below method iscaled the shorthand method
+  method (){
+console.log('method practice')
+  }
+
+ }
+ console.log(object6)
+ // in the case when both property and value of an object are using the same name  such as the case of
+ //"message: message". we can use the the shorthand property by just weiting one name to represent both
+ // property and value i.e just message only into the object. another things desstructuring  does is that you can store the value of an object into another object
+
+
   </script>
 
 
