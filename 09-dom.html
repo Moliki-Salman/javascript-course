@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM</title>
+  </head>
+  <body>
+<button>hello</button>
+<button class="js-button"> second buttton</button>
+    <script>
+      // the DOM is another built inObject in JS (Document Object)
+      // the document is an object, and the dot body is accesing the property bidy inside the document object and
+      // the dot innnerHTML is accessing the property inside the body element inside the document object.The document object is connected to the webpage that is why all these are possible . Thus the document object represents/modes the web page
+      document.title = "Good job!"; // this will change the tittle property to 'Good job!'
+
+      //The document.body takes everything inside the body element in html and put it insode the document object.
+      //thus we can have HTML elements insode of JS. The DOM combines JSand HTML together and it gives JS control of the web page. When wenow have  an html element inside of JS, the HTML element is converted to JavaScript Object. Just like every other object, the body element inside and a document object also has properties and  methods e.g body. innerHTML
+    //  console.log(document.body);
+    //  console.log(typeof document.body);
+    //  document.body.innerHTML; // this controls all the inner HTML elements inside the body element`
+    //  document.body.innerHTML = "hello"; // this replaces everything on the page with hello
+    //  document.body.innerHTML = "<button>Good job</button>"; // we can also change theinnerHTML with other HTML elements.
+      //document.querySelector(); // this lets us get any element from the HTLM page and put it inside JS and we can console the element
+      console.log(document.querySelector('button').innerHTML) // you have to add . innerHTML to the element selected by querySelector.
+      document.querySelector('button')
+        .innerHTML = 'changed the hello';
+      document.querySelector('.js-button');
+      const buttonElement  =  document.querySelector('.js-button')
+      console.log(buttonElement)
+    </script>
+  </body>
+</html>
