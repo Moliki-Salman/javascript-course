@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Todo List</title>
+</head>
+<body>
+<p>Todo List</p>
+<input placeholder="Todo name" class="input-todo-list">
+<button onclick=" todolist()">Add</button>
+
+<script>
+  const todoArray = []
+  function todolist() {
+const inputElement = document.querySelector('.input-todo-list');
+const name = inputElement.value
+//console.log(inputValue)
+ todoArray.push(name)
+console.log(todoArray)
+//reset the textbox after an imput on the todolist i.e  makes the textbox into empty
+inputElement.value = ''
+}
+</script>
+</body>
+
+</html>
